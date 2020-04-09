@@ -12,12 +12,6 @@ else
 fi
 
 
-if [ ! -z "$WD_PATH" ]
-then
-  echo "Changing dir to $WD_PATH"
-  cd $WD_PATH
-fi
-
 echo "Installing NPM dependencies"
 npm install
 
