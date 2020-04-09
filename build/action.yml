@@ -4,10 +4,6 @@ branding:
   icon: 'truck'
   color: 'purple'
 inputs:
-  wdPath:
-    description: 'Working directory path'
-    required: false
-    default: ''
   debug:
     description: 'Print script debugging info'
     required: false
