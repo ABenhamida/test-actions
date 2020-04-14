@@ -1,5 +1,6 @@
 #!/bin/sh
-echo ruby -v
+export REVIEWDOG_GITHUB_API_TOKEN="${INPUT_GITHUB_TOKEN}"
+
 if [ "$DEBUG" == "false" ]
 then
   # Carry on, but do quit on errors
