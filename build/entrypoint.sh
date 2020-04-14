@@ -20,7 +20,7 @@ then
   npm install -g grunt-cli
   echo "Running Grunt with args"
   grunt $* \
-  | reviewdog -efm="%f:%l:%c %m" -name="grunt-custom" -reporter="${INPUT_REPORTER}" -level="${INPUT_LEVEL}"
+  | reviewdog -efm="%f:%l:%c %m" -name="grunt-custom"
 else
   echo "Running NPM with args"
   sh -c "npm $*"
