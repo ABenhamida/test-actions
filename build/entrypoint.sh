@@ -19,7 +19,7 @@ if [ -f "Gruntfile.js" ]
 then
   npm install -g grunt-cli
   echo "Running Grunt with args"
-  sh -c "grunt $*"
+  #sh -c "grunt $*"
   scss_lint | reviewdog -efm="%f:%l:%c %m" -name="grunt-custom" -reporter="${INPUT_REPORTER}" -level="${INPUT_LEVEL}"
 else
   echo "Running NPM with args"
